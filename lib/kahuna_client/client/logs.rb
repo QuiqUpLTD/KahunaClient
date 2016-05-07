@@ -14,7 +14,7 @@ module KahunaClient
         time_formatted = timestamp.strftime('%m/%d/%y %H:%M:%S %p')
         cursor = options[:cursor]
         number_of_records = options[:number_of_records] || 1000
-        categories_to_return = optons[:categories_to_return] || [:push]
+        categories_to_return = options[:categories_to_return] || [:push]
         params = {
           :categories_to_return => categories_to_return,
           :number_of_records => number_of_records
